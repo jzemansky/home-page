@@ -1,0 +1,85 @@
+.body {
+    background-color: rgb(12, 81, 138);
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(9, 35, 105, 0.507)
+}
+
+.logoContainer {
+    margin: 10px 0px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoImage {
+    margin-right: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.logoName {
+    color: rgb(247, 246, 246);
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.links {
+    color: rgb(247, 246, 246);
+    padding: 5px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 0px 10px 0px 10px; */
+}
+
+.aboutContainer {
+    justify-content: space-between;
+    display: flex;
+    border: 2px solid;
+}
+
+.aboutContainerText {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.aboutContainerTitle {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(247, 246, 246);
+}
+
+.aboutContainerBody{
+    color: rgb(247, 246, 246);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.teaShopPic{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    width: 250px;
+    max-width: 50%;
+}
+
+.projectsContainer{
+
+}
+
+.contactContainer{
+
+}
