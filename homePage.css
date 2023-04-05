@@ -8,7 +8,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color:rgba(9, 35, 105, 0.507)
+    background-color:rgba(9, 35, 105, 0.507);
+    border-radius: 25px;
 }
 
 .logoContainer {
@@ -57,7 +58,7 @@
 .aboutContainer {
     justify-content: space-between;
     display: flex;
-    border: 2px solid;
+    max-height: 250px;
 }
 
 .aboutContainerText {
@@ -78,11 +79,11 @@
 }
 
 .teaShopPic{
-    display: flex;
     align-items: center;
     margin-right: 5px;
     width: 250px;
     max-width: 50%;
+    border-radius: 25px;
 }
 
 .projectsContainer{
