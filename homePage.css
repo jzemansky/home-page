@@ -37,7 +37,8 @@ p {
     align-items: center;
     width: 100%;
     position: fixed;
-    background-color:rgb(230, 250, 250);
+    background-color:rgba(30, 113, 236, 0);
+    color: white;
 }
 
 .logoImage {
@@ -68,10 +69,11 @@ p {
 }
   
 .headerLinks a:hover {
-    background-color: lightblue;
+    background-color: rgb(67, 101, 214);
     cursor: pointer;
     color: white;
     text-shadow: 2px 2px 1px black;
+    border-radius: 50px;
 }
 
 /* Container for the title section */
@@ -111,9 +113,8 @@ p {
 }
 
 .titleContainerText h1 {
-    color: #F08000;
-    text-shadow: -1px 0 black, 0 1px black, 2px 2px black, 0 -1px black;
-    
+    color: #e99c44;
+    text-shadow: -.5px 0 black, 0 .5px black, 1px 1px black, 0 -.5px black;
 }
 
 .titleContainerText p {
@@ -132,9 +133,16 @@ p {
   
 .aboutContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 128px 128px 96px;
-    background-color: lightblue;
+    background-color: #8CC7A1;
+    background: repeating-linear-gradient(
+        45deg,
+        #8CC7A1,
+        #8CC7A1 60px,
+        #5AAF78 60px,
+        #5AAF78 120px
+    );
     border-bottom: solid black 2px;
     font-size: 24px;
     line-height: 150%;
@@ -144,19 +152,32 @@ p {
 .aboutContainerBody{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 500px;
+    padding-right: 100px;
 }
 
 .aboutTitle {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(247, 246, 246);
+    color: #97EAD2;
+    text-shadow: -1px 0 black, 0 1px black, 2px 2px black, 0 -1px black;
+    padding-bottom: 20px;
 }
 
 .aboutText {
     text-align: end;
     font-style: normal;
     font-weight: 600;
-    color: sienna;
+    color: #74226C;
+    background-color: rgb(129, 110, 148, .75);
+    border: 3px solid #4B2142;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 20px;
+}
+
+.aboutGif {
+    width: 350px;
+    height: 300px;
 }
 
 /* Container for my projects */
@@ -180,36 +201,42 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     flex-wrap: wrap;
-    max-width: 200px;
-    font-size: 18px;
+    width: 500px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .projects {
-    color: white;
-    text-shadow: 2px 2px black;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    padding: 24px;
-    width: 300px;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .projectsTile {
-    width: 200px;
-    height: 200px;
-    border: 12px solid lightblue;
-    border-radius: 32px;
-    box-shadow: 2px 2px 3px black;
-    object-fit: cover;
+
 }
 
-.projectsTile a:hover {
-    border: 12px solid skyblue;
-    border-radius: 32px;
-    box-shadow: 2px 2px 10px navy;
+.projectImage {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    flex: 1 1 auto;
+    border: 12px double black;
+    border-radius: 50%;
+}
+
+.projectTitle {
+    font-size: 30px;
+}
+
+.projectDesc {
+    font-size: 22px;
+    width: 200px;
+    align-items: center;
+}
+
+.fbProjectcontainer {
+
 }
 
 /* Container for my contact information */
