@@ -4,4 +4,3 @@ This is the main home page that I have designed to showcase various projects and
 
 I hope to update this more and more over time to make it further improved and to see what I can add.
 
-View it live at jzemansky.github.io/home-page !!
