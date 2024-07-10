@@ -7,7 +7,7 @@
 }
 
 html {
-    background-color: rgb(12, 81, 138);
+    background-color: rgb(7, 57, 97);
     scroll-behavior: smooth;
 }
   
@@ -15,19 +15,15 @@ h1 {
     font-family: 'Titan One', 'Times New Roman', Times, serif;
     font-weight: 700;
 }
-  
+
 a {
-    color: black;
+    color: white;
 }
   
 p {
     color: #fffeef;
     font-size: 20px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-
-.body {
-    background-color: rgb(12, 81, 138);
 }
 
 /* Container for the header/nav bar */
@@ -37,8 +33,6 @@ p {
     align-items: center;
     width: 100%;
     position: fixed;
-    background-color:rgba(30, 113, 236, 0);
-    color: white;
 }
 
 .logoImage {
@@ -55,6 +49,11 @@ p {
     list-style: none;
     margin-left: auto;
     margin-right: 12px;
+    gap: 50px;
+}
+
+.headerLinks a::first-letter {
+    color:rgb(49, 185, 140);
 }
 
 .headerLinks a {
@@ -62,6 +61,9 @@ p {
     display: block;
     font-size: 20px;
     padding: 16px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    border-radius: 50px;
 }
 
 .headerLinks a:visited {
@@ -71,9 +73,6 @@ p {
 .headerLinks a:hover {
     background-color: rgb(67, 101, 214);
     cursor: pointer;
-    color: white;
-    text-shadow: 2px 2px 1px black;
-    border-radius: 50px;
 }
 
 /* Container for the title section */
@@ -82,10 +81,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid black 2px;
-    background-image: url(images/spaceVector.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .titleContainerBody {
@@ -96,10 +91,6 @@ p {
     margin: 128px 72px 72px;
     gap: 24px;
     padding: 32px;
-    border: 3px solid #1F305E;
-    border-radius: 200px;
-    box-shadow: 2px 2px 20px 2px;
-    background: rgba(61, 148, 199, 0.562);
 }
 
 .titleContainerText {
@@ -113,20 +104,13 @@ p {
 }
 
 .titleContainerText h1 {
-    color: #e99c44;
+    color: #ffffff;
+    font-size: 40px;
     text-shadow: -.5px 0 black, 0 .5px black, 1px 1px black, 0 -.5px black;
 }
 
 .titleContainerText p {
-    color:rgb(13, 16, 19)
-}
-
-.teaShopPic{
-    object-fit: cover;
-    flex: 1 1 auto;
-    max-width: 300px;
-    border: 12px double #F08000;
-    border-radius: 50%;
+    font-size: 30px;
 }
 
 /* Container for the about me section */
@@ -135,17 +119,7 @@ p {
     display: flex;
     flex-direction: row;
     padding: 128px 128px 96px;
-    background-color: #8CC7A1;
-    background: repeating-linear-gradient(
-        45deg,
-        #8CC7A1,
-        #8CC7A1 60px,
-        #5AAF78 60px,
-        #5AAF78 120px
-    );
-    border-bottom: solid black 2px;
     font-size: 24px;
-    line-height: 150%;
     font-style: italic;
 }
 
@@ -156,38 +130,11 @@ p {
     padding-right: 100px;
 }
 
-.aboutTitle {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #97EAD2;
-    text-shadow: -1px 0 black, 0 1px black, 2px 2px black, 0 -1px black;
-    padding-bottom: 20px;
-}
-
-.aboutText {
-    text-align: end;
-    font-style: normal;
-    font-weight: 600;
-    color: #74226C;
-    background-color: rgb(129, 110, 148, .75);
-    border: 3px solid #4B2142;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 20px;
-}
-
-.aboutGif {
-    width: 350px;
-    height: 300px;
-}
-
 /* Container for my projects */
 
 .projectsContainer {
     justify-content: center;
-    background-image: url(images/redSunset.jpg);
-    background-position: center;
-    background-size: cover;
-    border-bottom: solid black 2px;
+    padding-bottom: 20px;
 }
 
 .projectsContainerHeader {
@@ -197,23 +144,10 @@ p {
     padding: 0px 24px 96px 24px;
 }
 
-.projectsHeader {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    flex-wrap: wrap;
-    width: 500px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
 .projects {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-}
-
-.projectsTile {
-
+    justify-content: space-around;
 }
 
 .projectImage {
@@ -225,24 +159,23 @@ p {
     border-radius: 50%;
 }
 
-.projectTitle {
-    font-size: 30px;
-}
-
-.projectDesc {
-    font-size: 22px;
-    width: 200px;
+.projectTextContainer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.fbProjectcontainer {
+.projectTitle {
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+}
 
+.projectDesc {
+    width: 200px;
 }
 
 /* Container for my contact information */
 
 .contactContainer{
-    color: rgb(247, 246, 246);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align: center;
 }
