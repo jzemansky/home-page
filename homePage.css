@@ -28,6 +28,7 @@ h1 {
 
 a {
     color: var(--first-color);
+    text-decoration: none;
 }
   
 p {
@@ -35,6 +36,11 @@ p {
     font-size: 20px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
+/* 
+body {
+    opacity: 0;
+    transition: opacity 2s;
+} */
 
 /* Container for the header/nav bar */
 
@@ -59,7 +65,7 @@ p {
     list-style: none;
     margin-left: auto;
     margin-top: 12px;
-    margin-right: 12px;
+    margin-right: 24px;
     gap: 50px;
 }
 
@@ -103,7 +109,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 300px 200px 300px 200px;
+    margin: 200px 200px 300px 200px;
 }
 
 .titleContainerText {
@@ -115,13 +121,21 @@ p {
 }
 
 .titleContainerText h1 {
-    color: #ffffff;
+    color: var(--first-color);
     font-size: 100px;
-    text-shadow: -.5px 0 black, 0 .5px black, 1px 1px black, 0 -.5px black;
+    text-shadow: -.5px 0px black, 0px .5px black, 1px 1px black, 0px -.5px black;
 }
 
 .titleContainerText p {
     font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.vl {
+    border-left: 2px solid var(--second-color); 
+    height: 500px;
 }
 
 /* Container for the about me section */
@@ -136,9 +150,14 @@ snippet of whats on the resume. Will implement some js here to do so, React?
     align-items: center;
 }
 
-.aboutContainerBody{
+.aboutContainerBody {
     display: flex;
-    margin: 300px 200px 300px 200px; 
+    margin: 300px 200px 300px 200px;
+    color: var(--first-color);
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 
 /* Container for my projects */
@@ -172,12 +191,9 @@ snippet of whats on the resume. Will implement some js here to do so, React?
 .projectTitle {
     font-size: 30px;
     padding: 10px 0px 10px 0px;
+    text-decoration: underline;
 }
 
 .projectDesc {
     width: 200px;
-}
-
-.footer {
-
 }
