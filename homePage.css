@@ -6,8 +6,18 @@
   margin: 0;
 }
 
+:root {
+    --first-color: #f4eeee; 
+        
+    --second-color: #9ef5cf; 
+    
+    --third-color: #51dacf;
+    
+    --fourth-color: #0c4762; 
+}
+
 html {
-    background-color: rgb(7, 57, 97);
+    background: linear-gradient(to bottom, var(--third-color) 0%, var(--fourth-color) 100%) ;
     scroll-behavior: smooth;
 }
   
@@ -17,11 +27,11 @@ h1 {
 }
 
 a {
-    color: white;
+    color: var(--first-color);
 }
   
 p {
-    color: #fffeef;
+    color: var(--first-color);
     font-size: 20px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
@@ -38,7 +48,7 @@ p {
 .logoImage {
     height: 40px;
     margin-left: 24px;
-    border: 3px solid #1F305E;
+    border: 3px double var(--fourth-color);
     border-radius: 50%;
 }
 
@@ -48,12 +58,13 @@ p {
     text-align: center;
     list-style: none;
     margin-left: auto;
+    margin-top: 12px;
     margin-right: 12px;
     gap: 50px;
 }
 
 .headerLinks a::first-letter {
-    color:rgb(49, 185, 140);
+    color: var(--second-color);
 }
 
 .headerLinks a {
@@ -61,8 +72,9 @@ p {
     display: block;
     font-size: 20px;
     padding: 16px;
-    color: white;
+    color: var(--first-color);
     text-shadow: 2px 2px 1px black;
+    border: 2px solid var(--fourth-color);
     border-radius: 50px;
 }
 
@@ -71,11 +83,15 @@ p {
 }
   
 .headerLinks a:hover {
-    background-color: rgb(67, 101, 214);
+    background-color: var(--fourth-color);
     cursor: pointer;
 }
 
 /* Container for the title section */
+
+.main {
+    
+}
 
 .titleContainer {
     display: flex;
@@ -87,61 +103,49 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
-    margin: 128px 72px 72px;
-    gap: 24px;
-    padding: 32px;
+    margin: 300px 200px 300px 200px;
 }
 
 .titleContainerText {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1 1 auto;
     align-items: flex-start;
-    gap: 20px;
-    padding-left: 32px;
-    max-width: 360px;
+    gap: 100px;
 }
 
 .titleContainerText h1 {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 100px;
     text-shadow: -.5px 0 black, 0 .5px black, 1px 1px black, 0 -.5px black;
 }
 
 .titleContainerText p {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 /* Container for the about me section */
   
+
+/* I want to add my work history here as well, 
+and have you click on each title to have it expand and show a 
+snippet of whats on the resume. Will implement some js here to do so, React?
+ */
 .aboutContainer {
     display: flex;
-    flex-direction: row;
-    padding: 128px 128px 96px;
-    font-size: 24px;
-    font-style: italic;
+    align-items: center;
 }
 
 .aboutContainerBody{
     display: flex;
-    flex-direction: column;
-    width: 500px;
-    padding-right: 100px;
+    margin: 300px 200px 300px 200px; 
 }
 
 /* Container for my projects */
 
 .projectsContainer {
     justify-content: center;
-    padding-bottom: 20px;
-}
-
-.projectsContainerHeader {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding: 0px 24px 96px 24px;
+    margin: 0px 100px 200px 100px;
 }
 
 .projects {
@@ -174,8 +178,6 @@ p {
     width: 200px;
 }
 
-/* Container for my contact information */
+.footer {
 
-.contactContainer{
-    align: center;
 }
